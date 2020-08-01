@@ -1,4 +1,4 @@
-// Original bubbleSort function without animations
+// Original bubbleSort function with animations [TEST]
 /* export function bubbleSortAnimations(array) {
     const animations = [];
     if (array.length <= 1) {
