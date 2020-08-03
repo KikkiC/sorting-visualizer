@@ -6,7 +6,9 @@ import {quickSortAnimations} from '../SortingAlgorithms/QuickSort.js';
 import {insertionSortAnimations} from '../SortingAlgorithms/InsertionSort.js';
 
 const ANIMATION_SPEED_PER_MS = 10;
-const ARRAY_BAR_NUMBER = 100;
+const ARRAY_BAR_NUMBER = (window.screen.width)/10;
+const ARRAY_BAR_MAX_HEIGHT = (window.screen.height)/1.5;
+const ARRAY_BAR_MIN_HEIGHT = 5;
 const COMPARE_COLOR = 'red';
 const FINISH_COLOR = 'teal';
 
@@ -26,7 +28,7 @@ export default class SortingVisualizer extends React.Component {
     resetArray() {
         const array = [];
         for (let i = 0; i < ARRAY_BAR_NUMBER; i++) {
-          array.push(randomIntFromInterval(5, 480));
+          array.push(randomIntFromInterval(ARRAY_BAR_MIN_HEIGHT, ARRAY_BAR_MAX_HEIGHT));
         }
         this.setState({array});
     }
@@ -36,8 +38,10 @@ export default class SortingVisualizer extends React.Component {
 
         return (
             <div>
-            <div className="intro-container">
+            <div className="intro-container title">
                 <p>SORTING VISUALIZER</p>
+                {/* TODO: create counter to display number of comparisons
+                <p className="small-text">number of comparisons: </p> */}
             </div>
             <div className="array-container">
                 <div className="button-area">
