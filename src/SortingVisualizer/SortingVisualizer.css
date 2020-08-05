@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Rowdies:wght@300&display=swap');
+
+.intro-container {
+    position: center, flex;
+    font-family: 'Rowdies', cursive;
+    font-size: 38px;
+    margin-top: -5vh;
+    margin-bottom: -4vh;
+}
+.array-container {
+    position: absolute, center, flex;
+}
+.array-container .button-area button {
+    padding: 7px 20px;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    margin-bottom: 3.5vh;
+    outline: none;
+    position: absolute, center, flex;
+    border: 2px solid #008080;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #3b323f;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+.array-container .button-area .primary-btn {
+    background-color: #008080;
+    color: #fff;
+}
+.array-bar {
+   background: linear-gradient(to right top, #96ffcb, #64faff, #93ebff, #d9d6ff, #ffc7ea);
+   margin: 0vh 0.1vw;
+   width: 0.45vw;
+   display: inline-block;
+}
