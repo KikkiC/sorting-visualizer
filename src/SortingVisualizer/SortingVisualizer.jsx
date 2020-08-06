@@ -8,8 +8,8 @@ import {heapSortAnimations} from '../SortingAlgorithms/HeapSort.js';
 import {combSortAnimations} from '../SortingAlgorithms/CombSort.js';
 
 const ANIMATION_SPEED_PER_MS = 10;
-const ARRAY_BAR_NUMBER = (window.screen.width)/9;
-const ARRAY_BAR_MAX_HEIGHT = (window.screen.height)/1.5;
+const ARRAY_BAR_NUMBER = 125;
+const ARRAY_BAR_MAX_HEIGHT = 490;
 const ARRAY_BAR_MIN_HEIGHT = 5;
 const COMPARE_COLOR = 'red';
 const FINISH_COLOR = 'teal';
